@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+    .header__left {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        padding: 6px 3px;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 0;
+        background: #393939;
+        border-radius: 20px;
+    }
+
+    .header__burger::before {
+        top: 6px;
+    }
+
+    .header__burger::after {
+        bottom: 6px;
+    }
+
+    .header__burger span {
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        left: 0;
+        top: 11px;
+        background: #393939;
+        border-radius: 20px;
+    }
+
+    .header__aside {
+        display: block;
+        position: fixed;
+        top: 96px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

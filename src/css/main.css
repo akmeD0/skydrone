@@ -25,6 +25,9 @@ body {
     line-height: 120%;
     color: #4B4B4B;
 }
+body.lock {
+    overflow: hidden;
+}
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -79,7 +82,7 @@ footer {
     z-index: 50;
     transition: background .5s ease;
 }
-.header.scrolled {
+.header.active {
     background: #FFFFFF;
 }
 .header__cont {
@@ -137,7 +140,6 @@ footer {
     width: 100%;
     min-height: 754px;
     position: relative;
-    max-height: 754px;
     background: url(/src/img/hero__bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -226,7 +228,7 @@ footer {
 .clients__company {
     width: 100%;
     max-width: 184.61px;
-    max-height: 184.61px;
+    height: 184.61px;
     object-fit: contain;
 }
 
@@ -640,6 +642,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .aplication__right {
     width: 100%;
@@ -668,7 +671,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 .aplication__btn {
     width: 100%;
@@ -792,7 +796,8 @@ footer {
     text-decoration: underline;
 }
 .contact__map iframe{
-    width: 664.15px;
+    width: 100%;
+    max-width: 664.15px;
     height: 487.11px;
     border: 0;
 }
@@ -826,6 +831,9 @@ footer {
     width: 100%;
     max-width: 286px;
     min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer__logo img {
     width: 100%;

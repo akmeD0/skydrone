@@ -1,6 +1,314 @@
 @media screen and (max-width: 320px) {
+    /* HEADER */
+
     .header {
         padding: 24px 20px;
         height: 76px;
+    }
+    .header__cont {
+        max-width: 280px;
+        min-height: 28px;
+    }
+    .header__logo {
+        max-width: 129.42px;
+        height: 28px;
+    }
+    .header__aside {
+        top: 76px;
+        padding-top: 50px;
+    }
+    .header__link--aside {
+        font-size: 16px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 0px 20px;
+        min-height: 533px;
+        background-position: -150px;
+    }
+    .hero__cont {
+        min-height: 533px;
+        max-width: 280px;
+    }
+    .hero__block {
+        max-width: 280px;
+        min-height: 260px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__circle {
+        display: none;
+    }
+    .hero__title {
+        font-size: 28px;
+    }
+    .hero__desc {
+        font-size: 16px;
+    }
+
+    /* CLIENTS */
+
+    .clients {
+        min-height: 884.29px;
+        padding: 64px 20px;
+    }
+    .clients__cont {
+        max-width: 280px;
+        min-height: 756.29px;
+        gap: 48px;
+    }
+    .clients__title {
+        font-size: 16px;
+    }
+    .clients__list {
+        max-width: 184.61px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+    .clients__sec {
+        max-width: 184.61px;
+        gap: 64px;
+    }
+    .clients__company {
+        height: 40px;
+        object-fit: contain;
+    }
+
+    /* BANNER */
+
+    .banner {
+        display: none;
+    }
+
+    /* FUTURE */
+
+    .future {
+        min-height: 962.09px;
+        padding: 0px 20px 64px;
+    }
+    .future__cont {
+        max-width: 280px;
+        gap: 80px;
+    }
+    .future__img {
+        max-width: 280px;
+        min-height: 234.09px;
+        filter: drop-shadow(0px 100px 80px rgba(201, 201, 201, 0.07)) drop-shadow(0px 64.8148px 46.8519px rgba(201, 201, 201, 0.0531481)) drop-shadow(0px 38.5185px 25.4815px rgba(201, 201, 201, 0.0425185)) drop-shadow(0px 20px 13px rgba(201, 201, 201, 0.035)) drop-shadow(0px 8.14815px 6.51852px rgba(201, 201, 201, 0.0274815)) drop-shadow(0px 1.85185px 3.14815px rgba(201, 201, 201, 0.0168519));
+    }
+    .future__block {
+        max-width: 280px;
+        min-height: 584px;
+        min-width: 0;
+    }
+    .future__top {
+        min-height: 116px;
+    }
+    .future__top .future__title {
+        font-size: 16px;
+    }
+    .future__top .future__title--sub {
+        font-size: 28px;
+    }
+    .future__bottom {
+        min-height: 436px;
+        gap: 24px;
+    }
+    .future__box {
+        max-width: 280px;
+        min-height: 198px;
+    }
+    .future__box .future__title {
+        font-size: 16px;
+    }
+
+    /* REVIEWS */
+
+    .reviews {
+        min-height: 1344px;
+        padding: 48px 20px;
+    }
+    .reviews__cont {
+        max-width: 280px;
+        gap: 48px;
+
+    }
+    .reviews__block {
+        max-width: 280px;
+        min-height: 384px;
+    }
+    .reviews__top {
+        max-width: 280px;
+    }
+
+    /* FEATURES */
+
+    .features {
+        min-height: 1048px;
+        padding: 64px 20px;
+    }
+    .features__cont {
+        max-width: 280px;
+    }
+    .features__block {
+        max-width: 280px;
+        min-height: 560px;
+    }
+    .features__top {
+        min-height: 116px;
+    }
+    .features__top .features__title {
+        font-size: 16px;
+    }
+    .features__title--sub {
+        font-size: 28px;
+    }
+    .features__bottom {
+        min-height: 412px;
+        gap: 24px;
+    }
+    .features__box {
+        max-width: 280px;
+        min-height: 174px;
+    }
+    .features__title {
+        font-size: 16px;
+    }
+    .features__img {
+        max-width: 280px;
+        min-height: 280px;
+    }
+
+    /* CTA */
+
+    .cta {
+        min-height: 668px;
+        padding: 48px 20px;
+    }
+    .cta__cont {
+        max-width: 280px;
+    }
+    .cta__block {
+        max-width: 280px;
+        min-height: 337px;
+    }
+    .cta__top {
+        min-height: 249px;
+    }
+    .cta__title {
+        font-size: 32px;
+        line-height: 110%;
+    }
+    .cta__desc {
+        max-width: 280px;
+    }
+
+    /* APLICATION */
+
+    .aplication {
+        min-height: 494.37px;
+        padding: 64px 20px;
+    }
+    .aplication__cont {
+        max-width: 280px;
+        min-height: 366.37px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+    .aplication__right {
+        max-width: 280px;
+        min-height: 174px;
+    }
+    .aplication__down {
+        max-width: 236.88px;
+        min-height: 156.37px;
+        flex-direction: column;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        min-height: 934.47px;
+        padding: 48px 20px;
+    }
+    .contact__cont {
+        max-width: 280px;
+        gap: 36px;
+    }
+    .contact__header {
+        max-width: 280px;
+        min-height: 74px;
+    }
+    .contact__title {
+        font-size: 16px;
+        max-width: 95px;
+    }
+    .contact__title--sub {
+        font-size: 28px;
+    }
+    .contact__info {
+        min-height: 728.47px;
+        flex-direction: column;
+        gap: 36px;
+        align-items: start;
+    }
+    .contact__links {
+        max-width: 280px;
+        min-height: 487.11px;
+    }
+    .contact__block {
+        max-width: 280px;
+    }
+    .contact__map iframe {
+        max-width: 280px;
+        height: 205.36px;
+        border: 0;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        min-height: 670.43px;
+        padding: 80px 20px;
+    }
+    .footer__cont {
+        max-width: 280px;
+        min-height: 510.43px;
+        padding: 0;
+    }
+    .footer__top {
+        flex-direction: column;
+        min-height: 238px;
+    }
+    .footer__logo {
+        max-width: 286px;
+        min-height: 30px;
+    }
+    .footer__logo img {
+        height: 30px;
+    }
+    .footer__nav {
+        align-items: center;
+    }
+    .footer__credits {
+        min-height: 208.43px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: end;
+    }
+    .footer__cookies {
+        max-width: 108px;
+        min-height: 111px;
+        gap: 24px;
+        flex-direction: column;
+
+    }
+    .footer__copyright {
+        max-width: 221.12px;
+        margin-top: 24px;
     }
 }

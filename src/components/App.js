@@ -79,7 +79,7 @@ export class App extends Component {
         return (
             <div className='wrapper'>
                 {/* Header */}
-                <Header headerNav={this.state.headerNav}/>
+                <Header headerNav={this.state.headerNav} />
                 {/* Main section */}
                 <main>
                     {/* Hero */}

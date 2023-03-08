@@ -2,7 +2,6 @@
     .header__left {
         display: none;
     }
-
     .header__burger {
         display: block;
         position: relative;
@@ -10,7 +9,6 @@
         height: 24px;
         padding: 6px 3px;
     }
-
     .header__burger::before,
     .header__burger::after {
         content: '';
@@ -21,16 +19,14 @@
         left: 0;
         background: #393939;
         border-radius: 20px;
+        transition: all .5s ease;
     }
-
     .header__burger::before {
         top: 6px;
     }
-
     .header__burger::after {
         bottom: 6px;
     }
-
     .header__burger span {
         position: absolute;
         width: 18px;
@@ -39,14 +35,59 @@
         top: 11px;
         background: #393939;
         border-radius: 20px;
+        transition: transform .5s ease;
     }
-
+    .header__burger.active::before {
+        rotate: 45deg;
+        top: 11px;
+    }
+    .header__burger.active::after {
+        rotate: -45deg;
+        bottom: 11px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
     .header__aside {
         display: block;
         position: fixed;
         top: 96px;
-        left: 0;
-        width: 100%;
+        right: -100%;
+        width: 50%;
         height: 100%;
+        transition: all .5s ease;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .header__aside.active {
+        right: 0;
+        background: #DF8928;
+    }
+    .header__nav--aside {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 35px;
+    }
+    .header__link--aside {
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+    .button--aside {
+        width: 100%;
+        max-width: 133px;
+        height: 48px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #DF8928;
+        transition: background .5s ease;
+    }
+    .button--aside:hover {
+        background: #d4d4d4;
     }
 }

@@ -6,25 +6,20 @@ import HeaderAside from './HeaderBurger';
 export class Header extends Component {
     headerNav = this.props.headerNav;
     constructor(props) {
-        super(props);
-        this.state = {
-            isScrolled: false,
-        };
-
+        super(props)
         this.handleScroll = this.handleScroll.bind(this);
     }
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-    render() {
-        const { isScrolled } = this.state;
 
-        const headerClassName = isScrolled ? 'header scrolled' : 'header';
+    render() {
         return (
-            <div className={headerClassName}>
+            <div id='header' className='header'>
                 {/* Header container */}
                 <div className='header__cont cont'>
                     {/* Header Logo */}
@@ -40,16 +35,26 @@ export class Header extends Component {
                         {/* Header Button */}
                         <ContactButton />
                     </div>
-                    <div className='header__burger'><span></span></div>
-                    <HeaderAside />
+                    <div id='burger' className='header__burger' onClick={() => {
+                        document.getElementById('burger').classList.toggle('active')
+                        document.getElementById('aside').classList.toggle('active')
+                        document.querySelector('body').classList.toggle('lock');
+                        if (window.scrollY <= 350) {
+                            document.getElementById('header').classList.toggle('active')
+                        }
+                    }}><span></span></div>
+                    <HeaderAside headerNav={this.headerNav} />
                 </div>
             </div>
         )
     }
     handleScroll() {
         const point = 350;
-        const isScrolled = window.scrollY >= point;
-        this.setState({ isScrolled });
+        if (window.scrollY >= point) {
+            document.getElementById('header').classList.add('active');
+        } else {
+            document.getElementById('header').classList.remove('active');
+        }
     }
 }
 

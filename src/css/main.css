@@ -71,6 +71,10 @@ footer {
     background: #C4730A;
     border: 1px solid #C4730A;
 }
+.archo {
+    visibility: hidden;
+    position: absolute;
+}
 
 /* HEADER */
 

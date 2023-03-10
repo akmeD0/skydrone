@@ -9,7 +9,7 @@ export class Cta extends Component {
                 <div className='cta__cont cont'>
                     <CtaContent />
                 </div>
-                <a name="Download App" href='index.html'></a>
+                <a name="Download App" href='index.html' className='archo'>asd</a>
             </section>
         )
     }

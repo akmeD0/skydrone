@@ -7,7 +7,11 @@ export class HeaderAside extends Component {
             <div id='aside' className='header__aside'>
                 <nav className='header__nav--aside'>
                     {this.headerNav.map((el) => (
-                        <a href='index.html' className='header__link--aside' key={el}>{el}</a>
+                        <a href={`#` + el} className='header__link--aside' key={el} onClick={() => {
+                            document.querySelector('body').classList.remove('lock');
+                            document.getElementById('burger').classList.remove('active')
+                            document.getElementById('aside').classList.remove('active')
+                        }}>{el}</a>
                     ))}
                     <button className='button--aside'>
                         Contact Us

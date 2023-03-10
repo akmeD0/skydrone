@@ -85,6 +85,7 @@ export class App extends Component {
                     {/* Hero */}
                     <Hero />
                     {/* Clients */}
+                    <a name="Clients" href='#'></a>
                     <Clients />
                     {/* Banner */}
                     <Banner />
@@ -93,12 +94,14 @@ export class App extends Component {
                     {/* Reviews */}
                     <Reviews reviews={this.state.reviews} />
                     {/* Features */}
+                    <a name="Features" href='index.html'></a>
                     <Features />
                     {/* CTA */}
                     <Cta />
                     {/* Aplication */}
                     <Aplication />
                     {/* Contact */}
+                    <a name="contact"></a>
                     <Contact contacts={this.state.contacts} />
                 </main>
                 {/* Footer */}

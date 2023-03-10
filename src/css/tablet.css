@@ -90,4 +90,70 @@
     .button--aside:hover {
         background: #d4d4d4;
     }
+
+    .contact__info {
+        flex-direction: column;
+        align-items: start;
+    }
+    .hero__circle {
+        display: none;
+    }
+    
+    .banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .footer__top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__logo {
+        min-height: 30px;
+    }
+    .footer__cont {
+        gap: 32px;
+    }
+    .footer__credits {
+        min-height: 208.43px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: end;
+    }
+    .footer__cookies {
+        max-width: 108px;
+        min-height: 111px;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .footer__copyright {
+        margin-top: 24px;
+    }
+    .footer__nav {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        background-position: -150px;
+    }
+    .hero__cont {
+        justify-content: start;
+        padding-top: 200px;
+    }
+    .hero__block {
+        align-items: center;
+        text-align: center;
+        min-height: 200px;
+        gap: 10px;
+    }
+    .hero__title {
+        font-size: 28px;
+    }
+    .hero__desc {
+        font-size: 16px;
+    }
 }

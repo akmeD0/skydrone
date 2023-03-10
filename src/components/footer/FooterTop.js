@@ -32,7 +32,7 @@ export class FooterTop extends Component {
                 </ul>
                 <nav className='footer__nav'>
                     {this.footerNav.map((el) => (
-                        <a href='index.html' className='footer__nav--link' key={el}>{el}</a>
+                        <a href={`#`+el} className='footer__nav--link' key={el}>{el}</a>
                     ))}
                 </nav>
             </div>

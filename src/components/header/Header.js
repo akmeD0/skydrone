@@ -29,7 +29,7 @@ export class Header extends Component {
                         {/* Header Nav */}
                         <nav className='header__nav'>
                             {this.headerNav.map((el) => (
-                                <a href='index.html' className='header__link' key={el}>{el}</a>
+                                <a href={`#`+el} className='header__link' key={el}>{el}</a>
                             ))}
                         </nav>
                         {/* Header Button */}
